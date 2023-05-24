@@ -40,6 +40,7 @@ resource "aws_instance" "ps_instance" {
     root_block_device {
     volume_size = var.vol_size
 }
+    depends_on = [var.aws_nat_gateway]
 }
 resource "aws_lb_target_group_attachment" "ps_tg_attach" {
     count = var.instance_count
