@@ -6,6 +6,5 @@ variable "vol_size" {}
 variable "lb_target_group_arn" {}
 variable "private_sg" {}
 variable "key_name" {}
-variable "public_key_path" {
-  
-}
+variable "public_key_path" {}
+variable "aws_nat_gateway" {}
