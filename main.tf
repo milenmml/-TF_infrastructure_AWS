@@ -34,5 +34,6 @@ module "ec2" {
   lb_target_group_arn = module.lb.lb_target_group_arn
   key_name = "demo.pub"
   public_key_path = "/home/milen/.ssh/demo.pub"
+  aws_nat_gateway = module.vpc.aws_nat_gateway
 }
 
